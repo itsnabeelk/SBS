@@ -12817,7 +12817,8 @@ input::-ms-clear {
 
     .our-numbers__box-li {
         max-width: 100%;
-        margin: 0 0 60px
+        margin: 0 0 60px;
+        width: 100%;
     }
 
     .our-numbers__text {
@@ -12902,9 +12903,9 @@ input::-ms-clear {
     }
 
     .footer .accordion-mob__inner h4 em {
-        display: block
+        display: block;
+        filter: invert(1) brightness(3.5);
     }
-
     .accordion-mob__inner {
         border-bottom: 1px solid #e5e5e5;
         margin-bottom: 20px
