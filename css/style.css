@@ -5613,6 +5613,12 @@ input {
     z-index: 9999;
 }
 
+@media (max-width:620px){
+    .menu-wrapper {
+        width: 100%;
+    }
+}
+
 .menu-wrapper .accordion__arrow {
     margin: 8px 10px 0 0
 }
