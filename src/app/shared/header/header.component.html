@@ -1,89 +1,36 @@
-<header class="header">
-    <div class="container">
-        <div class="row no-gutters header-row">
-            <div class="col-6">
-                <a href="#" class="header__logo">
-                    <img class="header__logo-img" src="assets/images/media/logo-c.png">
-                    <img class="header__logo-img" src="assets/images/media/logo-w.png">
-                </a>
-
-            </div>
-
-            <div class="col-6 position-static">
-                <a class="burger-btn" href="javascript:void(0)"></a>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">About Us</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Media</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Contact Us</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">AR</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+<nav class="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img class="header__logo-img normal-logo" src="assets/images/media/logo-c.png">
+      <img class="header__logo-img fixed-logo" src="assets/images/media/logo-w.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <img class="header__logo-img w-75" src="assets/images/media/logo-w.png">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['home']" [routerLinkActive]="['active']" (click)="scrollToTop(); closeNavbar()">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['about']" [routerLinkActive]="['active']" (click)="scrollToTop(); closeNavbar()">Who We
+              Are</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['career']" [routerLinkActive]="['active']" (click)="scrollToTop(); closeNavbar()">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['contact']" [routerLinkActive]="['active']" (click)="scrollToTop(); closeNavbar()">Contact
+              Us</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</header>
-<div class="menu-wrapper">
-    <div class="menu-overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <a class="menu-overlay__close" href="javascript:void(0)">X</a>
-                    <a href="#" class="header__logo">
-                        <img class="header__logo-img" src="assets/images/media/logo-c.png">
-                    </a>
-                </div>
-                <div class="col-md-12">
-                    <div class="accordion">
-                        <div class="accordion__accordion-inner">
-                            <li class="menu-overlay__item">
-                                <a href="#" target="_self" class="menu-overlay__link">
-                                    Home
-                                </a>
-                            </li>
-                        </div>
-                        <div class="accordion__accordion-inner">
-                            <li class="menu-overlay__item">
-                                <a href="#" target="_self" class="menu-overlay__link">
-                                    About Us
-                                </a>
-                            </li>
-                        </div>
-                        <div class="accordion__accordion-inner">
-                            <li class="menu-overlay__item">
-                                <a href="#" target="_self" class="menu-overlay__link">
-                                    images/
-                                </a>
-                            </li>
-                        </div>
-                        <div class="accordion__accordion-inner">
-                            <li class="menu-overlay__item">
-                                <a href="#" target="_self" class="menu-overlay__link">
-                                    Contact Us
-                                </a>
-                            </li>
-                        </div>
-                        <div class="accordion__accordion-inner">
-                            <li class="menu-overlay__item">
-                                <a href="#" target="_self" class="menu-overlay__link">
-                                    AR
-                                </a>
-                            </li>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+  </div>
+</nav>

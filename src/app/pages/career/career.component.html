@@ -1,0 +1,85 @@
+ <div class="wrapper-box p-relative ">
+    <div class="breadcrumb__bg breadcrumb__bg__overlay pt-130 pb-130 " data-background="assets/images/breadcrumb/breadcrumb-bg-1.jpg" style="background-image: url(&quot;assets/images/breadcrumb/breadcrumb-bg-1.jpg&quot;);">
+       <div class="container">
+          <div class="row">
+             <div class="col-xxl-12">
+                <div class="breadcrumb__content p-relative z-index-1 text-center">
+                   <div class="breadcrumb__list mb-10">
+                      <span><a [routerLink]="['home']">Home </a></span>
+                      <span class="dvdr"> / </span>
+                      <span class="sub-page-black"> Career</span>
+                   </div>
+                   <h3 class="breadcrumb__title mb-20">Join With Us</h3>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+
+ <div class="container mt-50 mb-50">
+    <div class="row mx-0 justify-content-center">
+      <div class="col-md-12 col-lg-12 px-lg-2 col-xl-12 px-xl-0 px-xxl-3">
+        <form method="POST" class="w-100 rounded-1 p-4 border bg-white" action="https://herotofu.com/start"
+          enctype="multipart/form-data">
+  
+          <label class="d-block mb-4">
+            <span class="form-label d-block">Name</span>
+            <input
+              name="message"
+              class="form-control"
+              rows="3"
+              placeholder="Full Name">
+          </label>
+
+          <label class="d-block mb-4">
+            <span class="form-label d-block">Email</span>
+            <input
+              name="message"
+              class="form-control"
+              rows="3"
+              placeholder="sample@email.com">
+          </label>
+
+          <label class="d-block mb-4">
+            <span class="form-label d-block">Mobile Number</span>
+            <input name="message" class="form-control" rows="3" placeholder="05 XXXX XXX">
+          </label>
+
+          <label class="d-block mb-4">
+            <span class="form-label d-block">Years of experience</span>
+            <select required name="experience" class="form-select">
+              <option>Less than a year</option>
+              <option>1 - 2 years</option>
+              <option>2 - 4 years</option>
+              <option>4 - 7 years</option>
+              <option>7 - 10 years</option>
+              <option>10+ years</option>
+            </select>
+          </label>
+  
+          <label class="d-block mb-4">
+            <span class="form-label d-block">Tell us more about yourself</span>
+            <textarea
+              name="message"
+              class="form-control"
+              rows="3"
+              placeholder="Message"
+              style="min-height: 100px;"
+            ></textarea>
+          </label>
+  
+          <label class="d-block mb-4">
+            <span class="form-label d-block">Your CV</span>
+            <input required name="cv" type="file" class="form-control upload-cv" />
+          </label>
+  
+          <div class="mb-3">
+            <div class="contact__button mt-25">
+                <button class="tp-btn-3" type="submit">Apply Now</button>
+             </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

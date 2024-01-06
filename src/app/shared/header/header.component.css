@@ -1,0 +1,51 @@
+.navbar {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    padding: 35px 0;
+    /* border-bottom: 1px solid #ffffff59; */
+}
+.navbar-toggler{
+    border:none;
+}
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.offcanvas {
+    padding: 50px 25px;
+    background: #181818;
+}
+.offcanvas::before {
+ content: "";
+ position: absolute;
+ background-image: url(../../../assets/images/media/ar-pattern2.png);
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: -1;
+ background-position: center;
+ background-size: cover;
+ opacity: 0.8;
+}
+
+.btn-close {
+    filter: invert(1);
+}
+.nav-link {
+    margin: 15px 0;
+    color: #fff !important;
+    font-size: 18px;
+}
+.nav-link:hover {
+    color: #ccc !important;
+}
+.navbar-toggler {
+    filter: invert(1) brightness(10);
+}
+.active{
+    color: #f9c25b !important;
+}

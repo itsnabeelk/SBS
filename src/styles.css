@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+.header-static .header {
+    position: static;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+    position: absolute !important;
+    background: transparent;
+}
+.navbar-brand {
+    width: 300px;
+}
+.navbar {
+    transition: 0.5s ease;
+    z-index: 9999;
+}
+.sticky-header .navbar {
+    position: fixed !important;
+    background: #313131 !important;
+    transition: 0.5s ease;
+    z-index: 9999;
+}
+.fixed-logo{
+    display: none;
+    transition: 0.5s ease;
+}
+.normal-logo{
+    transition: 0.5s ease;
+}
+.sticky-header .fixed-logo{
+    display: block !important;
+    transition: 0.5s ease;
+}
+.sticky-header .normal-logo{
+    display: none !important;
+    transition: 0.5s ease;
+}
+.btn-close:focus {
+    box-shadow: none !important;
+}
+
+a {
+    color:inherit !important;
+}
+ol, ul {
+    padding-left: initial !important;
+}
