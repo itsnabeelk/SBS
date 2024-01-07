@@ -1,25 +1,14 @@
 
 function customJs(){
 
-$(window).on('load', function() {
-  // Disable body scrolling
-  $('body').css('overflow', 'hidden');
-  
-  // Set a higher z-index for the loader
-  $("#preloader").css('z-index', '9999999');
-  
-  // Fade out the loading animation
-  $("#status").fadeOut(5000);
-  
-  // Delay and fade out the white DIV that covers the website
-  $("#preloader").delay(1000).fadeOut("slow", function() {
-    // Restore body scrolling
-    $('body').css('overflow', 'auto');
-    
-    // Reset z-index for the loader
-    $("#preloader").css('z-index', 'initial');
-  });
-});
+    var windowOn = $(window);
+	////////////////////////////////////////////////////
+	// 01. PreLoader Js
+	windowOn.on('load', function () {
+		$("#loading").fadeOut(500);
+	});
+
+
 
 
 // portfolio
